@@ -77,6 +77,10 @@ $(function() {
         $(".navbar .navbar-collapse").toggleClass("show");
     });
 
+    $(".navbar .navbar-nav .nav-link").click(function() {
+        $(".navbar .navbar-collapse").removeClass("show");
+    });
+
     wind.on("scroll", function() {
 
         var bodyScroll = wind.scrollTop(),
@@ -98,6 +102,7 @@ $(function() {
     function noScroll() {
         window.scrollTo(0, 0);
     }
+
 
 
     /* =============================================================================
